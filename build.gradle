@@ -1,0 +1,58 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext {
+        androidXCoreVersion = '1.3.2'
+        androidXLegacySupport = '1.0.0'
+        androidXTestCoreVersion = '1.2.0'
+        androidXTestExtKotlinRunnerVersion = '1.1.1'
+        androidXTestExtVersion = '1.1.2'
+        androidXTestRulesVersion = '1.2.0'
+        appCompatVersion = '1.2.0'
+        archLifecycleVersion = '2.2.0'
+        archTestingVersion = '2.1.0'
+        constraintLayoutVersion = '2.0.4'
+        coroutinesVersion = '1.3.7'
+        dexMakerVersion = '2.12.1'
+        espressoVersion = '3.2.0'
+        fragmentVersion = '1.2.5'
+        gradleVersion = '4.1.1'
+        hiltVersion='2.31.2-alpha'
+        hiltAndroidXVersion = '1.0.0-alpha03'
+        junitVersion = '4.13.1'
+        kotlinVersion = '1.4.20'
+        materialDesignVersion = '1.4.0-alpha01'
+        mockkVersion = '1.9.3'
+        mockitoVersion = '2.19.0'
+        navigationVersion = '2.3.4'
+        robolectricVersion = '4.3.1'
+        roomVersion = '2.2.5'
+        truthVersion = '1.0'
+        viewpagerVersion = '1.0.0'
+        dataBindingCompilerVersion = gradleVersion // Always need to be the same.
+    }
+
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:$gradleVersion"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$navigationVersion"
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$hiltVersion"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

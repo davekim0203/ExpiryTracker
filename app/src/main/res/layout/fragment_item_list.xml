@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="itemListVM"
+            type="com.davek.expirydatetracker.viewmodel.ItemListViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment.ItemListFragment">
+
+        <TextView
+            android:id="@+id/tv_expires_soon_count"
+            style="@style/roundStatusTextViewStyle"
+            android:background="@drawable/textview_status_background"
+            app:expireSoonCount="@{itemListVM.expireSoonCount}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_expired_times_count"
+            style="@style/roundStatusTextViewStyle"
+            android:background="@drawable/textview_status_background"
+            app:expiredCount="@{itemListVM.expiredCount}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_expires_soon_count" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/food_item_list"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:foodItems="@{itemListVM.foodItems}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_expired_times_count" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_floating_action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:contentDescription="@string/fab_content_description_add_item"
+            android:onClick="@{() -> itemListVM.onAddButtonClick()}"
+            app:layout_constraintBottom_toBottomOf="@+id/food_item_list"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_add_24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

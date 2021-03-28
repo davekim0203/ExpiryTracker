@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/item_list_fragment">
+
+    <fragment
+        android:id="@+id/item_list_fragment"
+        android:name="com.davek.expirydatetracker.fragment.ItemListFragment"
+        tools:layout="@layout/fragment_item_list"
+        android:label="@string/app_name">
+
+        <action
+            android:id="@+id/action_ItemListFragment_to_ItemDetailFragment"
+            app:destination="@id/item_detail_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/item_detail_fragment"
+        android:name="com.davek.expirydatetracker.fragment.ItemDetailFragment"
+        tools:layout="@layout/fragment_item_detail"
+        android:label="{title}">
+
+        <argument
+            android:name="foodItemId"
+            app:argType="long"
+            android:defaultValue="-1L"/>
+
+        <argument
+            android:name="title"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+
+</navigation>

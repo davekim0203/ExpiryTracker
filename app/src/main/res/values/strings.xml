@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Expiry Tracker</string>
+
+    <string-array name="sort_by_options">
+        <item>@string/sort_type_expiry_date_asc</item>
+        <item>@string/sort_type_expiry_date_desc</item>
+        <item>@string/sort_type_quantity_asc</item>
+        <item>@string/sort_type_quantity_desc</item>
+        <item>@string/sort_type_name_asc</item>
+        <item>@string/sort_type_name_desc</item>
+    </string-array>
+
+    <!--  ItemListFragment  -->
+    <string name="expire_soon_count">%1$d item(s) expire in 7 days</string>
+    <string name="expired_count">%1$d item(s) are expired</string>
+    <string name="remaining_days">%1$d Days</string>
+    <string name="expiry_date_with_title">Expiry Date: %1$s</string>
+    <string name="sort_type_expiry_date_asc">Expiry Date Asc</string>
+    <string name="sort_type_expiry_date_desc">Expiry Date Desc</string>
+    <string name="sort_type_quantity_asc">Quantity Asc</string>
+    <string name="sort_type_quantity_desc">Quantity Desc</string>
+    <string name="sort_type_name_asc">Name Asc</string>
+    <string name="sort_type_name_desc">Name Desc</string>
+    <string name="add_item_title">Add Item</string>
+    <string name="edit_item_title">Edit Item</string>
+    <string name="delete_food_item_confirm_dialog_title">Delete Item</string>
+    <string name="delete_food_item_confirm_dialog_message">Do you want to delete %1$s?</string>
+    <string name="delete_expired_food_items_confirm_dialog_title">Delete Expired Items</string>
+    <string name="delete_expired_food_items_confirm_dialog_message">Do you want to delete expired items?</string>
+    <string name="delete_food_item_confirm_dialog_positive_button">Delete</string>
+    <string name="dialog_negative_button">Cancel</string>
+    <string name="sort_dialog_title">Sort by:</string>
+    <string name="menu_sort">Sort</string>
+    <string name="menu_delete_all_items">Delete All Items</string>
+    <string name="menu_delete_expired_items">Delete Expired Items</string>
+    <string name="fab_content_description_add_item">Add item button</string>
+    <string name="item_deleted_snackbar_message">Item is deleted</string>
+
+    <!--  ItemDetailFragment  -->
+    <string name="menu_save">Save</string>
+    <string name="menu_delete">Delete</string>
+    <string name="item_name_title">Name</string>
+    <string name="item_expiry_date_title">Expiry Date</string>
+    <string name="item_comment_title">Comment</string>
+    <string name="item_quantity_title">Quantity</string>
+    <string name="item_notification_title">Notification</string>
+    <string name="hint_required_field">(required)</string>
+    <string name="hint_optional_field">(optional)</string>
+    <string name="fab_content_description_decrease_quantity">Decrease quantity button</string>
+    <string name="fab_content_description_increase_quantity">Increase quantity button</string>
+    <string name="delete_food_item_confirm_dialog_message_detail_fragment">Do you want to delete this item?</string>
+    <string name="name_required_snackbar_message">Name is required</string>
+    <string name="notification_error_snackbar_message">There was an error trying to set notification.\nPlease save the item again.</string>
+
+    <!--  Notification  -->
+    <string name="notification_summary_title">Expiry Tracker</string>
+    <string name="notification_summary_body">New updates from Expiry Tracker</string>
+    <string name="notification_expires_in_a_week_item_body">%1$s will expire in %2$d days</string>
+    <string name="notification_expires_in_a_week_item_title">Expires Soon</string>
+    <string name="notification_expires_today_item_body">%1$s expires today</string>
+    <string name="notification_expires_today_item_title">Expires Today</string>
+    <string name="notification_expired_item_body">%1$s has expired</string>
+    <string name="notification_expired_item_title">Expired</string>
+    <string name="notification_channel_id" translatable="false">expiry_tracker_channel</string>
+    <string name="notification_channel_name" translatable="false">Expiry Tracker</string>
+    <string name="notification_channel_description">Expiry Tracker Notifications</string>
+
+</resources>

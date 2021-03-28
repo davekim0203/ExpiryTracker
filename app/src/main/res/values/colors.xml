@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#039BE5</color>
+    <color name="colorPrimaryDark">#006DB3</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="status_red">#FFe04d38</color>
+    <color name="status_yellow">#FFF6EA7B</color>
+    <color name="status_green">#FF32CD32</color>
+
+    <color name="swipe_delete_background">#F44336</color>
+
+    <color name="edit_text_background">#f2f2f2</color>
+    <color name="horizontal_divider_background">#c0c0c0</color>
+</resources>
