@@ -34,7 +34,7 @@
     <string name="menu_delete_all_items">Delete All Items</string>
     <string name="menu_delete_expired_items">Delete Expired Items</string>
     <string name="fab_content_description_add_item">Add item button</string>
-    <string name="item_deleted_snackbar_message">Item is deleted</string>
+    <string name="item_deleted_snackbar_message">Item deleted</string>
 
     <!--  ItemDetailFragment  -->
     <string name="menu_save">Save</string>

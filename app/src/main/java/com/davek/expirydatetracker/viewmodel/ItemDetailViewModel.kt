@@ -67,10 +67,12 @@ class ItemDetailViewModel @Inject constructor(
     private var mPrevExpiryDate: Date? = null
     private val selectedDateCalendar: Calendar = getCalendarInstance()
     private var isNewFoodItem: Boolean = false
+    private var isItemLoaded = false
 
     private val alarmManager = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
 
     fun loadItem(id: Long) {
+        if (isItemLoaded) return
         if (id == DEFAULT_ITEM_ID) {
             _isNotificationOn.value = DEFAULT_NOTIFICATION_STATUS
             _expiryDate.value = selectedDateCalendar.time
@@ -101,6 +103,7 @@ class ItemDetailViewModel @Inject constructor(
         note.value = foodItem.note
         mPrevIsNotificationOn = foodItem.isNotificationOn
         mPrevExpiryDate = foodItem.expiryDate
+        isItemLoaded = true
     }
 
     fun onQuantityIncreaseButtonClick() {
