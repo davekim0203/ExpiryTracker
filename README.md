@@ -6,9 +6,9 @@ Expiry Tracker is a simple expiry date reminder app with notification.
 This app can help users to organize and update their items easily.
 Users can be notified when items are about to expire, so they never waste anything.
 
-<img alt='Get it on Google Play' src='https://github.com/davekim0203/ExpiryTracker/blob/master/screenshots/expiry_tracker.png' height="450"/></a>
-<img alt='Get it on Google Play' src='https://github.com/davekim0203/ExpiryTracker/blob/master/screenshots/expiry_tracker_notifications.png' height="450"/></a>
-<img alt='Get it on Google Play' src='https://github.com/davekim0203/ExpiryTracker/blob/master/screenshots/expiry_tracker_sort.png' height="450"/></a>
+<img alt='Expiry tracker homescreen' src='https://github.com/davekim0203/ExpiryTracker/blob/master/screenshots/expiry_tracker.png' height="450"/></a>
+<img alt='Expiry tracker notification' src='https://github.com/davekim0203/ExpiryTracker/blob/master/screenshots/expiry_tracker_notifications.png' height="450"/></a>
+<img alt='Expiry tracker sort dialog' src='https://github.com/davekim0203/ExpiryTracker/blob/master/screenshots/expiry_tracker_sort.png' height="450"/></a>
 
 ## Android Development
 This app includes:
